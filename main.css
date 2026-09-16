@@ -1,4 +1,4 @@
-* { margin: 0; /* Поставити всі границі на 0 */ color: white; font-family: sans-serif; /* Стандартний системний шрифт без засічок */ }
+* { margin: 0; /* Поставити всі границі на 0 */ color: white; font-family: sans-serif; /* Стандартний системний шрифт без засічок */}
 
 main { margin-inline: auto; } /* Центрувати вміст контейнеру */
 
@@ -16,12 +16,13 @@ h1 {
 body { background-image: url('menu_background.png'); background-repeat: repeat; } /* Фон мозаїка сланцю (з майнкрафту) */
 body { display: flex; } /* Відображати все в 1-у рядку */
 
-@media (max-width: 990px) { body { flex-wrap: wrap; } } /* Переносити навігаційну панель вверх якщо немає місця */
+@media (max-width: 990px) { body { flex-wrap: wrap; justify-content: center; } } /* Переносити навігаційну панель вверх якщо немає місця */
+@media (min-width: 991px) { nav { top: 0; position: sticky; height: 100vh; overflow-y: auto; } } /* Закріпити навігаційну панель */
 
 nav {
   font-size: 14px; /* Оптимальний розмір шрифту для інтерфейсів на 15.6" 1920x1080 екрані з дистанції перегляду 50 см при 100%-у масштабу */
-  margin: 5px 10px 5px 10px; /* Відступи */
-  min-width: 280px; /* Оптимальна ширина для навігаційної панелі */
+  box-sizing: border-box; padding: 5px 10px; /* Рамка навігаційної панлі */
+  min-width: 300px; /* Оптимальна ширина для навігаційної панелі */
   line-height: 1.6; /* Оптимальний для читання міжрядковий інтервал */
 }
 
@@ -31,3 +32,5 @@ section {
   justify-content: center; /* Центрувати вміст контейнеру */
   gap: 10px; /* Пробіли між елементами */
 }
+
+section figcaption { max-width: 256px } /* Максимальна ширина тексту — ширина прев'ю */
