@@ -14,12 +14,13 @@ body { background-image: url('menu_background.png'); background-repeat: repeat; 
 body { display: flex; } /* Відображати все в 1-у рядку */
 
 @media (max-width: 990px) { body { flex-wrap: wrap; justify-content: center; } } /* Переносити навігаційну панель вверх якщо немає місця */
+@media (max-width: 990px) { nav { max-width: 990px; } } /* Розширити навігаційну панель*/
 @media (min-width: 991px) { nav { top: 0; position: sticky; height: 100vh; overflow-y: auto; } } /* Закріпити навігаційну панель */
+@media (min-width: 991px) { nav { min-width: 330px; max-width: 330px; } } /* Оптимальна ширина для навігаційної панелі */
 
 nav {
   font-size: 14px; /* Оптимальний розмір шрифту для інтерфейсів на 15.6" 1920x1080 екрані з дистанції перегляду 50 см при 100%-у масштабу */
   box-sizing: border-box; padding: 5px 10px; /* Рамка навігаційної панлі */
-  min-width: 42ch; /* Оптимальна ширина для навігаційної панелі */
   color: white;
 }
 
