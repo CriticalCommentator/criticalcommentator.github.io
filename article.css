@@ -34,7 +34,7 @@ article {
   background-color: var(--bg-color); color: var(--font-color);
 }
 
-article a { text-decoration: none; } /* Прибрати підкреслення з стилю посилання */
+article, main a { text-decoration: none; } /* Прибрати підкреслення з стилю посилання */
 
 article img { margin: 10px 0px 10px 0px; /* Відступи верх низ */ display: block; /* Займати весь рядок */ margin-inline: auto; /* Центрувати */ }
 article img { max-width: 100%; } /* Задати максимальну довжину зображення — 100% довжини контейнеру */
