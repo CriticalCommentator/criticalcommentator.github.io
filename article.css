@@ -9,6 +9,7 @@ a:hover { text-decoration: underline; } /* Підкреслювати посил
 
 h1 { font-size: 23px; text-align: center; }
 h2 { font-size: 26px; text-align: center; }
+h3 { font-size: 30px; text-align: center; }
 
 body { background-image: url('menu_background.png'); background-repeat: repeat; } /* Фон мозаїка сланцю (з майнкрафту) */
 body { display: flex; } /* Відображати все в 1-у рядку */
